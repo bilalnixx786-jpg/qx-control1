@@ -2,7 +2,7 @@
   "active": true,
   "password_required": true,
   "users": {
-    "uid_0001": { "name": "User1", "password": "pass1" },
+    "uid_591955": { "name": "15k", "password": "15k" },
     "uid_0002": { "name": "User2", "password": "pass2" },
     "uid_0003": { "name": "User3", "password": "pass3" },
     "uid_0004": { "name": "User4", "password": "pass4" },
