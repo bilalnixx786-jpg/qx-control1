@@ -4,8 +4,8 @@
   "users": {
     "uid_591955": { "name": "15k", "password": "15k" },
     "uid_724363": { "oppo": "oppo", "password": "oppo" },
-    "uid_206484": { "Huzifa10k": "User3", "password": "10k" },
-    "uid_202167": { "huzifa": "User4", "password": "10k" },
+    "blockmain": { "Huzifa10k": "User3", "password": "10k" },
+    "blocked main": { "huzifa": "User4", "password": "10k" },
     "uid_129235": { "50client": "User5", "password": "50$" },
 
     "uid_0006": { "name": "User6", "password": "pass6" },
@@ -64,9 +64,9 @@
   },
 
   "blocked": [
-    "uid_9866",
-    "uid_b002",
-    "uid_b003",
+    uid_202167",
+    "uid_206484",
+    "uid2000",
     "uid_b004",
     "uid_9698",
     "uid_b006",
