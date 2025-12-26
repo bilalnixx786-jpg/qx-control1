@@ -22,13 +22,13 @@
       "name": "Ms Trader replacement Done",
       "password": "10k"
     },
-    "uid_670503": {
-      "name": "00",
-      "password": "Khan4000"
+    "uid_206484": {
+      "name": "blockHuzifa",
+      "password": "block"
     },
-    "uid_848612": {
-      "name": "00",
-      "password": "00"
+    "uid_202167": {
+      "name": "huzifablock",
+      "password": "block"
     },
     "uid_556024": {
       "name": "098",
@@ -124,8 +124,8 @@
     }
   },
   "blocked": [
-    "uid_000000",
-    "uid_144867",
+    "uid_206484",
+    "uid_202167",
     "uid_201192",
     "uid_300002",
     "uid_300003",
