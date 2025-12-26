@@ -30,9 +30,9 @@
       "name": "huzifablock",
       "password": "block"
     },
-    "uid_556024": {
-      "name": "098",
-      "password": "KhanTrader2"
+    "uid_970447": {
+      "name": "block",
+      "password": "huzifablock"
     },
     "uid_591902": {
       "name": "0987",
@@ -126,7 +126,7 @@
   "blocked": [
     "uid_206484",
     "uid_202167",
-    "uid_201192",
+    "uid_970447",
     "uid_300002",
     "uid_300003",
     "uid_300004",
