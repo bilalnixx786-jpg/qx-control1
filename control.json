@@ -2,137 +2,153 @@
   "active": true,
   "password_required": true,
   "users": {
-    "uid_953228": {
-      "name": "30$",
-      "password": "12345"
-    },
-    "uid_681325": {
-      "name": "Muhammad Yaqoob",
-      "password": "@10$"
-    },
-    "uid_151549": {
-      "name": "Yaqoob Android",
-      "password": "@10$"
-    },
-    "uid_249150": {
-      "name": "mudasar 3k pending",
-      "password": "2000"
-    },
-    "uid_131708": {
-      "name": "Ms Trader replacement Done",
-      "password": "10k"
-    },
-    "uid_206484": {
-      "name": "blockHuzifa",
-      "password": "block"
-    },
-    "uid_202167": {
-      "name": "huzifablock",
-      "password": "block"
-    },
-    "uid_970447": {
-      "name": "block",
-      "password": "huzifablock"
-    },
-    "uid_378527": {
-      "name": "Imran old man  ",
-      "password": "123"
-    },
-    "uid_666101": {
-      "name": "ShezadMehar8k",
-      "password": "ShezadMehar+923341220096"
-    },
-    "uid_373473": {
-      "name": "3k pending",
-      "password": "2k"
-    },
-    "uid_613375": {
-      "name": "vaddah 35$",
-      "password": "30$"
-    },
-    "uid_665723": {
-      "name": "Danyal 5k",
-      "password": "786"
-    },
-    "uid_445675": {
-      "name": "Mohsin Android my",
-      "password": "1234"
-    },
-    "uid_724363": {
-      "name": "Oppo Main lgai ",
-      "password": "123"
-    },
-    "uid_284544": {
-      "name": "Only Demo To Live Testing ",
-      "password": "123"
-    },
-    "uid_420217": {
-      "name": "replacement Done ✅",
-      "password": "123"
-    },
-    "uid_445675_b": {
-      "name": "test leaderboard",
-      "password": "123"
-    },
-    "uid_384409": {
-      "name": "1500",
-      "password": "123"
-    },
-    "uid_398222": {
-      "name": "mehar",
-      "password": "123"
-    },
-    "uid_424537": {
-      "name": "687$",
-      "password": "7977$"
-    },
-    "uid_300011": {
-      "name": "TraderA2",
-      "password": "PassA2"
-    },
-    "uid_191926": {
-      "name": "exchange",
-      "password": "123"
-    },
-    "uid_663263": {
-      "name": "Hammad trader 50$ pending",
-      "password": "123"
-    },
-    "uid_267569": {
-      "name": "Imran zayan ",
-      "password": "123"
-    },
-    "uid_196869": {
-      "name": "Maryam Trader 10",
-      "password": "123"
-    },
-    "uid_854216": {
-      "name": "Flash",
-      "password": "123"
-    },
-    "uid_922711": {
-      "name": "Momin 10K 🇵🇰✅",
-      "password": "123"
-    },
-    "uid_420217": {
-      "name": "50$",
-      "password": "123"
-    },
-    "BNDA-C9E35Y": {
-      "name": "Bilalnixx",
-      "password": "3535"
-    }
+    "uid_953228": { "name": "30$", "password": "12345" },
+    "uid_681325": { "name": "Muhammad Yaqoob", "password": "@10$" },
+    "uid_151549": { "name": "Yaqoob Android", "password": "@10$" },
+    "uid_249150": { "name": "mudasar 3k pending", "password": "2000" },
+    "uid_131708": { "name": "Ms Trader replacement Done", "password": "10k" },
+    "uid_206484": { "name": "blockHuzifa", "password": "block" },
+    "uid_202167": { "name": "huzifablock", "password": "block" },
+    "uid_970447": { "name": "block", "password": "huzifablock" },
+    "uid_378527": { "name": "Imran old man", "password": "123" },
+    "uid_666101": { "name": "ShezadMehar8k", "password": "ShezadMehar+923341220096" },
+    "uid_373473": { "name": "3k pending", "password": "2k" },
+    "uid_613375": { "name": "vaddah 35$", "password": "30$" },
+    "uid_665723": { "name": "Danyal 5k", "password": "786" },
+    "uid_445675": { "name": "Mohsin Android my", "password": "1234" },
+    "uid_724363": { "name": "Oppo Main lgai", "password": "123" },
+    "uid_284544": { "name": "Only Demo To Live Testing", "password": "123" },
+    "uid_420217": { "name": "50$", "password": "123" },
+    "uid_445675_b": { "name": "test leaderboard", "password": "123" },
+    "uid_384409": { "name": "1500", "password": "123" },
+    "uid_398222": { "name": "mehar", "password": "123" },
+    "uid_424537": { "name": "687$", "password": "7977$" },
+    "uid_300011": { "name": "TraderA2", "password": "PassA2" },
+    "uid_191926": { "name": "exchange", "password": "123" },
+    "uid_663263": { "name": "Hammad trader 50$ pending", "password": "123" },
+    "uid_267569": { "name": "Imran zayan", "password": "123" },
+    "uid_196869": { "name": "Maryam Trader 10", "password": "123" },
+    "uid_854216": { "name": "Flash", "password": "123" },
+    "uid_922711": { "name": "Momin 10K 🇵🇰✅", "password": "123" },
+    "BNDA-C9E35Y": { "name": "Bilalnixx", "password": "3535" },
+
+    "uid_900001": { "name": "NewUser1", "password": "123" },
+    "uid_900002": { "name": "NewUser2", "password": "123" },
+    "uid_900003": { "name": "NewUser3", "password": "123" },
+    "uid_900004": { "name": "NewUser4", "password": "123" },
+    "uid_900005": { "name": "NewUser5", "password": "123" },
+    "uid_900006": { "name": "NewUser6", "password": "123" },
+    "uid_900007": { "name": "NewUser7", "password": "123" },
+    "uid_900008": { "name": "NewUser8", "password": "123" },
+    "uid_900009": { "name": "NewUser9", "password": "123" },
+    "uid_900010": { "name": "NewUser10", "password": "123" },
+
+    "uid_900011": { "name": "NewUser11", "password": "123" },
+    "uid_900012": { "name": "NewUser12", "password": "123" },
+    "uid_900013": { "name": "NewUser13", "password": "123" },
+    "uid_900014": { "name": "NewUser14", "password": "123" },
+    "uid_900015": { "name": "NewUser15", "password": "123" },
+    "uid_900016": { "name": "NewUser16", "password": "123" },
+    "uid_900017": { "name": "NewUser17", "password": "123" },
+    "uid_900018": { "name": "NewUser18", "password": "123" },
+    "uid_900019": { "name": "NewUser19", "password": "123" },
+    "uid_900020": { "name": "NewUser20", "password": "123" },
+
+    "uid_900021": { "name": "NewUser21", "password": "123" },
+    "uid_900022": { "name": "NewUser22", "password": "123" },
+    "uid_900023": { "name": "NewUser23", "password": "123" },
+    "uid_900024": { "name": "NewUser24", "password": "123" },
+    "uid_900025": { "name": "NewUser25", "password": "123" },
+    "uid_900026": { "name": "NewUser26", "password": "123" },
+    "uid_900027": { "name": "NewUser27", "password": "123" },
+    "uid_900028": { "name": "NewUser28", "password": "123" },
+    "uid_900029": { "name": "NewUser29", "password": "123" },
+    "uid_900030": { "name": "NewUser30", "password": "123" },
+
+    "uid_900031": { "name": "NewUser31", "password": "123" },
+    "uid_900032": { "name": "NewUser32", "password": "123" },
+    "uid_900033": { "name": "NewUser33", "password": "123" },
+    "uid_900034": { "name": "NewUser34", "password": "123" },
+    "uid_900035": { "name": "NewUser35", "password": "123" },
+    "uid_900036": { "name": "NewUser36", "password": "123" },
+    "uid_900037": { "name": "NewUser37", "password": "123" },
+    "uid_900038": { "name": "NewUser38", "password": "123" },
+    "uid_900039": { "name": "NewUser39", "password": "123" },
+    "uid_900040": { "name": "NewUser40", "password": "123" },
+
+    "uid_900041": { "name": "NewUser41", "password": "123" },
+    "uid_900042": { "name": "NewUser42", "password": "123" },
+    "uid_900043": { "name": "NewUser43", "password": "123" },
+    "uid_900044": { "name": "NewUser44", "password": "123" },
+    "uid_900045": { "name": "NewUser45", "password": "123" },
+    "uid_900046": { "name": "NewUser46", "password": "123" },
+    "uid_900047": { "name": "NewUser47", "password": "123" },
+    "uid_900048": { "name": "NewUser48", "password": "123" },
+    "uid_900049": { "name": "NewUser49", "password": "123" },
+    "uid_900050": { "name": "NewUser50", "password": "123" }
   },
-  "blocked": [
-    "uid_206484",
-    "uid_202167",
-    "uid_970447",
-    "uid_249150",
-    "uid_378527",
-    "uid_300004",
-    "uid_300005",
-    "uid_300006",
-    "uid_398222",
-    "uid_663263"
-  ]
+
+  "blocked": {
+    "uid_206484": "Huzifa Block",
+    "uid_202167": "Huzifa Block",
+    "uid_970447": "Huzifa Block",
+    "uid_249150": "Pending Issue",
+    "uid_378527": "Old Man",
+    "uid_398222": "Mehar",
+    "uid_663263": "Pending",
+    "uid_300004": "System Block",
+    "uid_300005": "System Block",
+    "uid_300006": "System Block",
+
+    "uid_910001": "New Block",
+    "uid_910002": "New Block",
+    "uid_910003": "New Block",
+    "uid_910004": "New Block",
+    "uid_910005": "New Block",
+    "uid_910006": "New Block",
+    "uid_910007": "New Block",
+    "uid_910008": "New Block",
+    "uid_910009": "New Block",
+    "uid_910010": "New Block",
+    "uid_910011": "New Block",
+    "uid_910012": "New Block",
+    "uid_910013": "New Block",
+    "uid_910014": "New Block",
+    "uid_910015": "New Block",
+    "uid_910016": "New Block",
+    "uid_910017": "New Block",
+    "uid_910018": "New Block",
+    "uid_910019": "New Block",
+    "uid_910020": "New Block",
+    "uid_910021": "New Block",
+    "uid_910022": "New Block",
+    "uid_910023": "New Block",
+    "uid_910024": "New Block",
+    "uid_910025": "New Block",
+    "uid_910026": "New Block",
+    "uid_910027": "New Block",
+    "uid_910028": "New Block",
+    "uid_910029": "New Block",
+    "uid_910030": "New Block",
+    "uid_910031": "New Block",
+    "uid_910032": "New Block",
+    "uid_910033": "New Block",
+    "uid_910034": "New Block",
+    "uid_910035": "New Block",
+    "uid_910036": "New Block",
+    "uid_910037": "New Block",
+    "uid_910038": "New Block",
+    "uid_910039": "New Block",
+    "uid_910040": "New Block",
+    "uid_910041": "New Block",
+    "uid_910042": "New Block",
+    "uid_910043": "New Block",
+    "uid_910044": "New Block",
+    "uid_910045": "New Block",
+    "uid_910046": "New Block",
+    "uid_910047": "New Block",
+    "uid_910048": "New Block",
+    "uid_910049": "New Block",
+    "uid_910050": "New Block"
+  }
 }
