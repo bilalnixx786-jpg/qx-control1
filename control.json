@@ -2,138 +2,50 @@
   "active": true,
   "password_required": true,
   "users": {
-    "uid_953228": {
-      "name": "30$",
-      "password": "12345"
-    },
-    "uid_436562": {
-      "name": "Muhammad Yaqoob",
-      "password": "@10$"
-    },
-    "uid_151549": {
-      "name": "Yaqoob Android",
-      "password": "@10$"
-    },
-    "uid_581143": {
-      "name": "tang kr rha ",
-      "password": "123"
-    },
-    "uid_131708": {
-      "name": "Ms Trader replacement Done",
-      "password": "10k"
-    },
-    "uld_314004": {
-      "name": "2nd laptop",
-      "password": "123"
-    },
-    "uid_449140": {
-      "name": "Kabir 8k 2 Feb",
-      "password": "123"
-    },
-    "uid_379590": {
-      "name": "Done 349",
-      "password": "123"
-    },
-    "uid_378527": {
-      "name": "Imran old man  ",
-      "password": "123"
-    },
-    "uld_314084": {
-      "name": "2nd laptop",
-      "password": "123"
-    },
-    "uid_565734": {
-      "name": "11k",
-      "password": "123"
-    },
-    "uid_613375": {
-      "name": "vaddah 35$",
-      "password": "30$"
-    },
-    "uid_665723": {
-      "name": "Danyal 5k",
-      "password": "786"
-    },
-    "uid_395843": {
-      "name": "6 bar uid wala",
-      "password": "123"
-    },
-    "wid_500364": {
-      "name": "2k replacement  ",
-      "password": "123"
-    },
-    "uid_790812": {
-      "name": "3k ",
-      "password": "123"
-    },
-    "uid_420217": {
-      "name": "replacement Done ✅",
-      "password": "123"
-    },
-    "uid_194444": {
-      "name": "10k ",
-      "password": "123"
-    },
-    "uid_384409": {
-      "name": "1500",
-      "password": "123"
-    },
-    "uid_398222": {
-      "name": "mehar",
-      "password": "123"
-    },
-    "uid_424537": {
-      "name": "687$",
-      "password": "7977$"
-    },
-    "uid_300011": {
-      "name": "TraderA2",
-      "password": "PassA2"
-    },
-    "uid_706726": {
-      "name": "10k",
-      "password": "123"
-    },
-    "uid_194444": {
-      "name": "10k advance ",
-      "password": "123"
-    },
-    "uid_267569": {
-      "name": "Imran zayan ",
-      "password": "123"
-    },
-    "uid_196869": {
-      "name": "Maryam Trader 10",
-      "password": "123"
-    },
-    "uid_819292": {
-      "name": "8k",
-      "password": "123"
-    },
-    "uid_922711": {
-      "name": "Momin 10K 🇵🇰✅",
-      "password": "123"
-    },
-    "uid_420217": {
-      "name": "50$",
-      "password": "123"
-    },
-    "uid_646925": {
-      "name": "Salar trader",
-      "password": "123"
-    }
+    "uid_953228": { "name": "30$", "password": "12345" },
+    "uid_436562": { "name": "Muhammad Yaqoob", "password": "@10$" },
+    "uid_151549": { "name": "Yaqoob Android", "password": "@10$" },
+    "uid_581143": { "name": "tang kr rha ", "password": "123" },
+    "uid_131708": { "name": "Ms Trader replacement Done", "password": "10k" },
 
+    "uid_314004": { "name": "2nd laptop", "password": "123" },
+    "uid_449140": { "name": "Kabir 8k 2 Feb", "password": "123" },
+    "uid_379590": { "name": "Done 349", "password": "123" },
+    "uid_378527": { "name": "Imran old man  ", "password": "123" },
+
+    "uid_314084": { "name": "2nd laptop", "password": "123" },
+    "uid_565734": { "name": "11k", "password": "123" },
+    "uid_613375": { "name": "vaddah 35$", "password": "30$" },
+    "uid_665723": { "name": "Danyal 5k", "password": "786" },
+    "uid_395843": { "name": "6 bar uid wala", "password": "123" },
+
+    "uid_500364": { "name": "2k replacement  ", "password": "123" },
+
+    "uid_790812": { "name": "3k ", "password": "123" },
+
+    "uid_420217": { "name": "replacement Done ✅", "password": "123" },
+
+    "uid_194444": { "name": "10k ", "password": "123" },
+
+    "uid_384409": { "name": "1500", "password": "123" },
+    "uid_398222": { "name": "mehar", "password": "123" },
+    "uid_424537": { "name": "687$", "password": "7977$" },
+    "uid_300011": { "name": "TraderA2", "password": "PassA2" },
+    "uid_706726": { "name": "10k", "password": "123" },
+    "uid_267569": { "name": "Imran zayan ", "password": "123" },
+    "uid_196869": { "name": "Maryam Trader 10", "password": "123" },
+    "uid_819292": { "name": "8k", "password": "123" },
+    "uid_922711": { "name": "Momin 10K 🇵🇰✅", "password": "123" },
+    "uid_646925": { "name": "Salar trader", "password": "123" }
   },
   "blocked": [
     "uid_206484",
     "uid_202167",
     "uid_970447",
     "uid_249150",
-    "uid_378527",
     "uid_300004",
     "uid_300005",
     "uid_300006",
-    "uid_398222",
     "uid_141592"
   ]
 }
