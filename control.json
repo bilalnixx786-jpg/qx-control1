@@ -10,7 +10,7 @@
     "uid_314004": { "name": "2nd laptop", "password": "123" },
     "uid_449140": { "name": "Kabir 8k 2 Feb", "password": "123" },
     "uid_379590": { "name": "Done 349", "password": "123" },
-    "uid_969652": { "name": "Iqram 4k", "password": "123" },
+    "uid_000000": { "name": "Iqram 4k", "password": "123" },
     "uid_314084": { "name": "2nd laptop", "password": "123" },
     "uid_565734": { "name": "11k", "password": "123" },
     "uid_613375": { "name": "vaddah 35$", "password": "30$" },
@@ -79,7 +79,7 @@
     "uid_900046": { "name": "Customer46", "password": "123" },
     "uid_900047": { "name": "Customer47", "password": "123" },
     "uid_900048": { "name": "Customer48", "password": "123" },
-    "uid_900049": { "name": "Customer49", "password": "123" },
+    "uid_968652": { "name": "iqram", "password": "123" },
     "uid_986774": { "name": "X300pro", "password": "123" }
   }
 }
