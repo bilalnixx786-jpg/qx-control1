@@ -30,7 +30,6 @@
     "uid_819292": { "name": "8k", "password": "123" },
     "uid_922711": { "name": "Momin 10K 🇵🇰✅", "password": "123" },
     "uid_665723": { "name": "943 10k", "password": "123" },
-
     "uid_972087": { "name": "943", "password": "123" },
     "uid_689758": { "name": "usama8konlylaptop", "password": "123" },
     "uid_992570": { "name": "4k", "password": "123" },
@@ -80,6 +79,8 @@
     "uid_781353": { "name": "muzimil964", "password": "123" },
     "uid_420217": { "name": "broken", "password": "123" },
     "uid_968652": { "name": "iqram", "password": "123" },
-    "uid_481777": { "name": "061", "password": "123" }
+    "uid_481777": { "name": "061", "password": "123" },
+
+    "uid_test001": { "name": "TEST_SLOT", "password": "TEST123" }
   }
 }
