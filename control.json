@@ -1,10 +1,10 @@
 {
   "active": true,
   "users": {
-    "uid_100001": {
+    "uid_386124": {
       "name": "User1",
       "expiry": "2026-09-15",
-      "days": 30,
+      "days": 60,
       "blocked": false
     },
     "uid_100002": {
