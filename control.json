@@ -1,86 +1,305 @@
 {
   "active": true,
-  "password_required": true,
   "users": {
-    "uid_185312": { "name": "1=162N=4k", "password": "12345" },
-    "uid_329033": { "name": "2=162=4k", "password": "@10$" },
-    "uid_346717": { "name": "423=15k=1", "password": "@123" },
-    "uid_638177": { "name": "409", "password": "123" },
-    "uid_653534": { "name": "Ms 907=3k", "password": "10k" },
-    "uid_808658": { "name": "Usman=121", "password": "123" },
-    "uid_613727": { "name": "intellectual", "password": "123" },
-    "uid_302053": { "name": "713=12k", "password": "123" },
-    "uid_376719": { "name": "4176k", "password": "123" },
-    "uid_232868": { "name": "1001 ", "password": "123" },
-    "uid_170457": { "name": "409Done3kk", "password": "123" },
-    "uid_218379": { "name": "423=15k", "password": "30$" },
-    "uid_731461": { "name": "14500=broken", "password": "786" },
-    "uid_383745": { "name": " broken", "password": "123" },
-    "uid_638677": { "name": "409=free", "password": "123" },
-    "uid_901424": { "name": "epty", "password": "123" },
-    "uid_639885": { "name": "Bilalnixxpc✅", "password": "123" },
-    "uid_138717": { "name": "bilalnixx", "password": "123" },
-    "uid_616079": { "name": "162=2nd", "password": "123" },
-    "uid_413029": { "name": "AsadOppoA6spro", "password": "123" },
-    "uid_506908": { "name": "bilalnix300pro", "password": "123" },
-    "uid_417884": { "name": "awais", "password": "PassA2" },
-    "uid_706726": { "name": "10k", "password": "123" },
-    "uid_730565": { "name": "Imran zayan ", "password": "123" },
-    "uid_196869": { "name": "Maryam Trader 10", "password": "123" },
-    "uid_819292": { "name": "8k", "password": "123" },
-    "uid_922711": { "name": "Momin 10K 🇵🇰✅", "password": "123" },
-    "uid_665723": { "name": "943 10k", "password": "123" },
-    "uid_972087": { "name": "943", "password": "123" },
-    "uid_689758": { "name": "usama8konlylaptop", "password": "123" },
-    "uid_992570": { "name": "4k", "password": "123" },
-    "uid_354831": { "name": "2500", "password": "123" },
-    "uid_876862": { "name": "157*15k", "password": "123" },
-    "uid_145731": { "name": "1035", "password": "123" },
-    "uid_278850": { "name": "10k035", "password": "123" },
-    "uid_765173": { "name": "wolf", "password": "123" },
-    "uid_524615": { "name": "sohail", "password": "123" },
-    "uid_595320": { "name": "15005=81", "password": "123" },
-    "uid_663141": { "name": "1035", "password": "123" },
-    "uid_576042": { "name": "1035", "password": "123" },
-    "uid_141993": { "name": "4k=150", "password": "123" },
-    "uid_730865": { "name": "423", "password": "123" },
-    "uid_964493": { "name": "4k+150", "password": "123" },
-    "uid_845147": { "name": "usman", "password": "123" },
-    "uid_581890": { "name": "broken", "password": "123" },
-    "uid_507601": { "name": "755", "password": "123" },
-    "uid_466487": { "name": "417", "password": "123" },
-    "uid_360663": { "name": "150$", "password": "123" },
-    "uid_617465": { "name": "amazontabmy", "password": "123" },
-    "uid_259186": { "name": "5k", "password": "123" },
-    "uid_814987": { "name": "Muhammadawais", "password": "123" },
-    "uid_152008": { "name": "sawal5k409", "password": "123" },
-    "uid_611287": { "name": "usman$", "password": "123" },
-    "uid_408504": { "name": "Mukhdoom10k", "password": "123" },
-    "uid_769575": { "name": "mukhdoom10k", "password": "123" },
-    "uid_453512": { "name": "1007", "password": "123" },
-    "uid_484649": { "name": "Muhammad Awais", "password": "123" },
-    "uid_252872": { "name": "907_4k", "password": "123" },
-    "uid_235574": { "name": "broken150", "password": "123" },
-    "uid_958587": { "name": "brokendp50$", "password": "123" },
-    "uid_207018": { "name": "943", "password": "123" },
-    "uid_386124": { "name": "14k061", "password": "123" },
-    "uid_526867": { "name": "50$243", "password": "123" },
-    "uid_426034": { "name": "10kFasihurrehman", "password": "123" },
-    "uid_706445": { "name": "lastreplace417", "password": "123" },
-    "uid_236956": { "name": "tanver243laptop", "password": "123" },
-    "uid_826037": { "name": "243tanverr", "password": "123" },
-    "uid_829868": { "name": "ahmedali10k047", "password": "123" },
-    "uid_431200": { "name": "1001", "password": "123" },
-    "uid_694374": { "name": "muzamil14k", "password": "123" },
-    "uid_803124": { "name": "awais", "password": "123" },
-    "uid_661856": { "name": "intractable", "password": "123" },
-    "uid_912146": { "name": "mughees123", "password": "123" },
-    "uid_323052": { "name": "lc700", "password": "123" },
-    "uid_781353": { "name": "muzimil964", "password": "123" },
-    "uid_420217": { "name": "broken", "password": "123" },
-    "uid_968652": { "name": "iqram", "password": "123" },
-    "uid_481777": { "name": "061", "password": "123" },
-
-    "uid_520569": { "name": "TEST_SLOT", "password": "TEST123" }
+    "uid_100001": {
+      "name": "User1",
+      "expiry": "2026-09-15",
+      "days": 30,
+      "blocked": false
+    },
+    "uid_100002": {
+      "name": "User2",
+      "expiry": "2026-09-10",
+      "days": 25,
+      "blocked": false
+    },
+    "uid_100003": {
+      "name": "User3",
+      "expiry": "2026-09-05",
+      "days": 20,
+      "blocked": false
+    },
+    "uid_100004": {
+      "name": "User4",
+      "expiry": "2026-08-30",
+      "days": 15,
+      "blocked": false
+    },
+    "uid_100005": {
+      "name": "User5",
+      "expiry": "2026-08-28",
+      "days": 10,
+      "blocked": false
+    },
+    "uid_100006": {
+      "name": "User6",
+      "expiry": "2026-08-27",
+      "days": 7,
+      "blocked": false
+    },
+    "uid_100007": {
+      "name": "User7",
+      "expiry": "2026-08-26",
+      "days": 5,
+      "blocked": false
+    },
+    "uid_100008": {
+      "name": "User8",
+      "expiry": "2026-08-25",
+      "days": 3,
+      "blocked": false
+    },
+    "uid_100009": {
+      "name": "User9",
+      "expiry": "2026-08-24",
+      "days": 1,
+      "blocked": false
+    },
+    "uid_100010": {
+      "name": "User10",
+      "expiry": "2026-09-20",
+      "days": 30,
+      "blocked": false
+    },
+    "uid_100011": {
+      "name": "User11",
+      "expiry": "2026-09-18",
+      "days": 28,
+      "blocked": false
+    },
+    "uid_100012": {
+      "name": "User12",
+      "expiry": "2026-09-15",
+      "days": 25,
+      "blocked": false
+    },
+    "uid_100013": {
+      "name": "User13",
+      "expiry": "2026-09-12",
+      "days": 22,
+      "blocked": false
+    },
+    "uid_100014": {
+      "name": "User14",
+      "expiry": "2026-09-10",
+      "days": 20,
+      "blocked": false
+    },
+    "uid_100015": {
+      "name": "User15",
+      "expiry": "2026-09-08",
+      "days": 18,
+      "blocked": false
+    },
+    "uid_100016": {
+      "name": "User16",
+      "expiry": "2026-09-05",
+      "days": 15,
+      "blocked": false
+    },
+    "uid_100017": {
+      "name": "User17",
+      "expiry": "2026-09-03",
+      "days": 12,
+      "blocked": false
+    },
+    "uid_100018": {
+      "name": "User18",
+      "expiry": "2026-09-01",
+      "days": 10,
+      "blocked": false
+    },
+    "uid_100019": {
+      "name": "User19",
+      "expiry": "2026-08-30",
+      "days": 8,
+      "blocked": false
+    },
+    "uid_100020": {
+      "name": "User20",
+      "expiry": "2026-08-29",
+      "days": 7,
+      "blocked": false
+    },
+    "uid_100021": {
+      "name": "User21",
+      "expiry": "2026-09-25",
+      "days": 30,
+      "blocked": false
+    },
+    "uid_100022": {
+      "name": "User22",
+      "expiry": "2026-09-22",
+      "days": 27,
+      "blocked": false
+    },
+    "uid_100023": {
+      "name": "User23",
+      "expiry": "2026-09-20",
+      "days": 25,
+      "blocked": false
+    },
+    "uid_100024": {
+      "name": "User24",
+      "expiry": "2026-09-18",
+      "days": 23,
+      "blocked": false
+    },
+    "uid_100025": {
+      "name": "User25",
+      "expiry": "2026-09-15",
+      "days": 20,
+      "blocked": false
+    },
+    "uid_100026": {
+      "name": "User26",
+      "expiry": "2026-09-13",
+      "days": 18,
+      "blocked": false
+    },
+    "uid_100027": {
+      "name": "User27",
+      "expiry": "2026-09-10",
+      "days": 15,
+      "blocked": false
+    },
+    "uid_100028": {
+      "name": "User28",
+      "expiry": "2026-09-08",
+      "days": 12,
+      "blocked": false
+    },
+    "uid_100029": {
+      "name": "User29",
+      "expiry": "2026-09-05",
+      "days": 10,
+      "blocked": false
+    },
+    "uid_100030": {
+      "name": "User30",
+      "expiry": "2026-09-03",
+      "days": 8,
+      "blocked": false
+    },
+    "uid_100031": {
+      "name": "User31",
+      "expiry": "2026-09-28",
+      "days": 30,
+      "blocked": false
+    },
+    "uid_100032": {
+      "name": "User32",
+      "expiry": "2026-09-26",
+      "days": 28,
+      "blocked": false
+    },
+    "uid_100033": {
+      "name": "User33",
+      "expiry": "2026-09-24",
+      "days": 26,
+      "blocked": false
+    },
+    "uid_100034": {
+      "name": "User34",
+      "expiry": "2026-09-22",
+      "days": 24,
+      "blocked": false
+    },
+    "uid_100035": {
+      "name": "User35",
+      "expiry": "2026-09-20",
+      "days": 22,
+      "blocked": false
+    },
+    "uid_100036": {
+      "name": "User36",
+      "expiry": "2026-09-18",
+      "days": 20,
+      "blocked": false
+    },
+    "uid_100037": {
+      "name": "User37",
+      "expiry": "2026-09-16",
+      "days": 18,
+      "blocked": false
+    },
+    "uid_100038": {
+      "name": "User38",
+      "expiry": "2026-09-14",
+      "days": 16,
+      "blocked": false
+    },
+    "uid_100039": {
+      "name": "User39",
+      "expiry": "2026-09-12",
+      "days": 14,
+      "blocked": false
+    },
+    "uid_100040": {
+      "name": "User40",
+      "expiry": "2026-09-10",
+      "days": 12,
+      "blocked": false
+    },
+    "uid_100041": {
+      "name": "User41",
+      "expiry": "2026-10-01",
+      "days": 30,
+      "blocked": false
+    },
+    "uid_100042": {
+      "name": "User42",
+      "expiry": "2026-09-29",
+      "days": 28,
+      "blocked": false
+    },
+    "uid_100043": {
+      "name": "User43",
+      "expiry": "2026-09-27",
+      "days": 26,
+      "blocked": false
+    },
+    "uid_100044": {
+      "name": "User44",
+      "expiry": "2026-09-25",
+      "days": 24,
+      "blocked": false
+    },
+    "uid_100045": {
+      "name": "User45",
+      "expiry": "2026-09-23",
+      "days": 22,
+      "blocked": false
+    },
+    "uid_100046": {
+      "name": "User46",
+      "expiry": "2026-09-21",
+      "days": 20,
+      "blocked": false
+    },
+    "uid_100047": {
+      "name": "User47",
+      "expiry": "2026-09-19",
+      "days": 18,
+      "blocked": false
+    },
+    "uid_100048": {
+      "name": "User48",
+      "expiry": "2026-09-17",
+      "days": 16,
+      "blocked": false
+    },
+    "uid_100049": {
+      "name": "User49",
+      "expiry": "2026-09-15",
+      "days": 14,
+      "blocked": false
+    },
+    "uid_100050": {
+      "name": "User50",
+      "expiry": "2026-09-13",
+      "days": 12,
+      "blocked": false
+    }
   }
 }
