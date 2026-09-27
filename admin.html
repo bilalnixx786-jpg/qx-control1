@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNDA CoDeX VIP Admin</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      font-family: 'Rajdhani', -apple-system, sans-serif;
+      background: #000000;
+      color: #e6edf3;
+      padding: 15px;
+      min-height: 100vh;
+      background-image:
+        radial-gradient(circle at 0% 0%, rgba(31, 111, 235, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, rgba(137, 87, 229, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.03) 0%, transparent 70%);
+      background-attachment: fixed;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* === ANIMATED BACKGROUND DOTS === */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: radial-gradient(circle, rgba(88, 166, 255, 0.08) 1px, transparent 1px);
+      background-size: 30px 30px;
+      animation: drift 60s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+    @keyframes drift {
+      from { transform: translate(0, 0); }
+      to { transform: translate(30px, 30px); }
+    }
+
+    /* === VIP HEADER === */
+    .vip-header {
+      position: relative;
+      text-align: center;
+      padding: 28px 15px 22px;
+      background: linear-gradient(135deg, #0a0e1a 0%, #1a0a2e 50%, #0a0e1a 100%);
+      border-radius: 16px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      box-shadow:
+        0 0 40px rgba(255, 215, 0, 0.15),
+        0 0 80px rgba(137, 87, 229, 0.1),
+        inset 0 0 30px rgba(31, 111, 235, 0.1);
+      overflow: hidden;
+      z-index: 1;
+    }
+    .vip-header::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: conic-gradient(from 0deg, transparent, rgba(255, 215, 0, 0.4), transparent 30%);
+      animation: rotate 6s linear infinite;
+      z-index: -1;
+    }
+    .vip-header::after {
+      content: '';
+      position: absolute;
+      inset: 2px;
+      background: linear-gradient(135deg, #0a0e1a 0%, #15092e 50%, #0a0e1a 100%);
+      border-radius: 14px;
+      z-index: -1;
+    }
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .crown {
+      font-size: 26px;
+      display: block;
+      margin-bottom: 5px;
+      filter: drop-shadow(0 0 10px gold);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+
+    .vip-logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, #58a6ff, #a371f7, #ffd700, #58a6ff);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 4s linear infinite;
+      text-shadow: 0 0 30px rgba(88, 166, 255, 0.5);
+    }
+    @keyframes shimmer {
+      from { background-position: 0% 50%; }
+      to { background-position: 300% 50%; }
+    }
+    .vip-sub {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 10px;
+      color: #ffd700;
+      letter-spacing: 4px;
+      margin-top: 6px;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    }
+    .vip-badges {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .vip-badge {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 8px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 1.5px;
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.05));
+      border: 1px solid rgba(255, 215, 0, 0.5);
+      color: #ffd700;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .vip-badge.blue {
+      background: linear-gradient(135deg, rgba(31, 111, 235, 0.3), rgba(31, 111, 235, 0.05));
+      border-color: rgba(88, 166, 255, 0.5);
+      color: #58a6ff;
+    }
+
+    /* === STATS BAR === */
+    .stats-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 15px;
+      z-index: 1;
+      position: relative;
+    }
+    .stat {
+      flex: 1;
+      background: linear-gradient(135deg, rgba(22, 27, 34, 0.9), rgba(13, 17, 23, 0.9));
+      border: 1px solid rgba(48, 54, 61, 0.8);
+      border-radius: 10px;
+      padding: 10px 8px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .stat-num {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffd700;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    }
+    .stat-label {
+      font-size: 9px;
+      color: #8b949e;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* === CARDS === */
+    .card {
+      background: linear-gradient(135deg, rgba(22, 27, 34, 0.95), rgba(13, 17, 23, 0.95));
+      border: 1px solid rgba(48, 54, 61, 0.8);
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 12px;
+      position: relative;
+      z-index: 1;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: border-color 0.3s;
+    }
+    .card:hover { border-color: rgba(88, 166, 255, 0.4); }
+
+    .card-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #58a6ff;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(48, 54, 61, 0.8);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card-title .icon { font-size: 16px; }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-size: 11px;
+      color: #8b949e;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid rgba(48, 54, 61, 0.8);
+      background: rgba(1, 4, 9, 0.7);
+      color: #e6edf3;
+      font-size: 14px;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    input:focus {
+      outline: none;
+      border-color: #ffd700;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      background: rgba(1, 4, 9, 0.9);
+    }
+    input::placeholder { color: #484f58; font-weight: 400; }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    button:active { transform: scale(0.98); }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #ffd700, #ffb800);
+      color: #0a0e1a;
+      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    }
+    .btn-gold:hover { box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5); }
+
+    .btn-blue {
+      background: linear-gradient(135deg, #1f6feb, #58a6ff);
+      color: white;
+      box-shadow: 0 4px 15px rgba(31, 111, 235, 0.3);
+    }
+
+    .btn-green {
+      background: linear-gradient(135deg, #238636, #2ea043);
+      color: white;
+      box-shadow: 0 4px 15px rgba(35, 134, 54, 0.3);
+    }
+
+    .btn-red {
+      background: linear-gradient(135deg, #da3633, #f85149);
+      color: white;
+    }
+
+    .btn-gray {
+      background: linear-gradient(135deg, #21262d, #30363d);
+      color: #c9d1d9;
+      border: 1px solid rgba(88, 166, 255, 0.2);
+    }
+
+    .small {
+      font-size: 10px;
+      color: #6e7681;
+      margin-top: 5px;
+      letter-spacing: 0.5px;
+    }
+
+    /* === LICENSE CARDS (VIP STYLE) === */
+    .lic-card {
+      background: linear-gradient(135deg, rgba(10, 14, 26, 0.9), rgba(21, 9, 46, 0.9));
+      border: 1px solid rgba(48, 54, 61, 0.8);
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .lic-card:hover {
+      border-color: rgba(255, 215, 0, 0.4);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    }
+    .lic-card.active-card { border-left: 3px solid #3fb950; }
+    .lic-card.revoked-card { border-left: 3px solid #f85149; }
+
+    .lic-key {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffd700;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+      word-break: break-all;
+    }
+    .lic-owner {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e6edf3;
+      margin-top: 6px;
+    }
+    .lic-note {
+      font-size: 12px;
+      color: #8b949e;
+      font-style: italic;
+      margin-top: 3px;
+    }
+    .lic-expires {
+      font-size: 11px;
+      color: #d29922;
+      margin-top: 6px;
+      letter-spacing: 0.5px;
+    }
+    .lic-status {
+      display: inline-block;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-top: 8px;
+    }
+    .lic-status.active {
+      background: rgba(63, 185, 80, 0.15);
+      color: #3fb950;
+      border: 1px solid rgba(63, 185, 80, 0.4);
+    }
+    .lic-status.revoked {
+      background: rgba(248, 81, 73, 0.15);
+      color: #f85149;
+      border: 1px solid rgba(248, 81, 73, 0.4);
+    }
+
+    .lic-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .lic-actions button { margin-top: 0; padding: 10px; font-size: 10px; }
+
+    /* === STATUS MESSAGE === */
+    .status {
+      padding: 14px;
+      margin-top: 15px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      display: none;
+      letter-spacing: 0.5px;
+      animation: slideIn 0.3s ease;
+    }
+    .status.show { display: block; }
+    .status.ok {
+      background: linear-gradient(135deg, rgba(35, 134, 54, 0.9), rgba(46, 160, 67, 0.9));
+      color: white;
+      border: 1px solid #2ea043;
+      box-shadow: 0 0 20px rgba(46, 160, 67, 0.4);
+    }
+    .status.err {
+      background: linear-gradient(135deg, rgba(218, 54, 51, 0.9), rgba(248, 81, 73, 0.9));
+      color: white;
+      border: 1px solid #f85149;
+      box-shadow: 0 0 20px rgba(248, 81, 73, 0.4);
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === LOADING SPINNER === */
+    .spinner {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid rgba(255, 215, 0, 0.3);
+      border-top-color: #ffd700;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* === FOOTER === */
+    .vip-footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px 15px;
+      font-size: 10px;
+      color: #6e7681;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-top: 1px solid rgba(48, 54, 61, 0.5);
+      position: relative;
+      z-index: 1;
+    }
+    .vip-footer .gold {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(90deg, #ffd700, #ffb800);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 900;
+      font-size: 11px;
+      letter-spacing: 3px;
+    }
+
+    /* === EMPTY STATE === */
+    .empty-state {
+      text-align: center;
+      padding: 30px 15px;
+      color: #6e7681;
+    }
+    .empty-state .icon { font-size: 40px; display: block; margin-bottom: 10px; opacity: 0.5; }
+    .empty-state .text { font-size: 13px; letter-spacing: 1px; }
+
+    /* === GLOW ANIMATION FOR ADD BUTTON === */
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 4px 15px rgba(35, 134, 54, 0.3); }
+      50% { box-shadow: 0 4px 25px rgba(35, 134, 54, 0.6); }
+    }
+    .btn-green { animation: glow 3s ease-in-out infinite; }
+  </style>
+</head>
+<body>
+
+  <!-- === VIP HEADER === -->
+  <div class="vip-header">
+    <span class="crown">👑</span>
+    <div class="vip-logo">BNDA CoDeX</div>
+    <div class="vip-sub">VIP Admin Panel</div>
+    <div class="vip-badges">
+      <span class="vip-badge">⚡ UNLIMITED ACCESS</span>
+      <span class="vip-badge blue">🔐 SECURE</span>
+    </div>
+  </div>
+
+  <!-- === STATS BAR === -->
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-num" id="statTotal">0</div>
+      <div class="stat-label">Total</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" id="statActive" style="color:#3fb950;">0</div>
+      <div class="stat-label">Active</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" id="statRevoked" style="color:#f85149;">0</div>
+      <div class="stat-label">Revoked</div>
+    </div>
+  </div>
+
+  <!-- === SETTINGS === -->
+  <div class="card">
+    <div class="card-title"><span class="icon">⚙️</span> Settings</div>
+    <label>GitHub Token (PAT)</label>
+    <input type="password" id="token" placeholder="ghp_xxxxxxxxxxxx">
+    <div class="small">🔒 Aapke phone par save hoga. Kisi ko na dein.</div>
+
+    <label>Repo Owner</label>
+    <input id="owner" value="bilalnixx786-jpg">
+
+    <label>Repo Name</label>
+    <input id="repo" value="qx-control1">
+
+    <label>File Path</label>
+    <input id="filepath" value="licenses.json">
+
+    <label>Branch</label>
+    <input id="branch" value="main">
+
+    <button class="btn-blue" onclick="saveSettings()">💾 SAVE SETTINGS</button>
+    <button class="btn-gray" onclick="loadLicenses()">🔄 LOAD LICENSES</button>
+  </div>
+
+  <!-- === ADD LICENSE === -->
+  <div class="card">
+    <div class="card-title"><span class="icon">➕</span> New License</div>
+    <label>License Key</label>
+    <input id="newKey" placeholder="e.g. QX-USER-002">
+
+    <label>Owner Name</label>
+    <input id="newOwner" placeholder="e.g. Ahmed Khan">
+
+    <label>Expires (timestamp, khali = never)</label>
+    <input id="newExpires" type="number" placeholder="optional">
+
+    <label>Note</label>
+    <input id="newNote" placeholder="e.g. 1 month demo">
+
+    <button class="btn-green" onclick="addLicense()">✨ CREATE LICENSE</button>
+  </div>
+
+  <!-- === LICENSE LIST === -->
+  <div class="card">
+    <div class="card-title"><span class="icon">📋</span> Licenses List</div>
+    <div id="list">
+      <div class="empty-state">
+        <span class="icon">🔑</span>
+        <div class="text">Load Licenses dabayein</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="status" id="status"></div>
+
+  <!-- === FOOTER === -->
+  <div class="vip-footer">
+    <div class="gold">◆ BNDA CoDeX ◆</div>
+    <div style="margin-top:6px;">VIP ADMIN PANEL — © 2026</div>
+    <div style="margin-top:4px; font-size:9px;">Unlimited Access • All Rights Reserved</div>
+  </div>
+
+  <script>
+    // === SETTINGS ===
+    function saveSettings() {
+      const s = {
+        token: document.getElementById('token').value.trim(),
+        owner: document.getElementById('owner').value.trim(),
+        repo: document.getElementById('repo').value.trim(),
+        filepath: document.getElementById('filepath').value.trim() || 'licenses.json',
+        branch: document.getElementById('branch').value.trim() || 'main'
+      };
+      if (!s.token || !s.owner || !s.repo) { showStatus('❌ Token, Owner aur Repo zaroori hain!', false); return; }
+      localStorage.setItem('gh_settings', JSON.stringify(s));
+      showStatus('✅ Settings saved!', true);
+    }
+
+    function getSettings() {
+      const raw = localStorage.getItem('gh_settings');
+      return raw ? JSON.parse(raw) : null;
+    }
+
+    function loadSettingsToForm() {
+      const s = getSettings();
+      if (s) {
+        document.getElementById('token').value = s.token || '';
+        document.getElementById('owner').value = s.owner || 'bilalnixx786-jpg';
+        document.getElementById('repo').value = s.repo || 'qx-control1';
+        document.getElementById('filepath').value = s.filepath || 'licenses.json';
+        document.getElementById('branch').value = s.branch || 'main';
+      }
+    }
+
+    // === GITHUB API ===
+    async function readLicenseFile(s) {
+      const url = `https://api.github.com/repos/${s.owner}/${s.repo}/contents/${s.filepath}?ref=${s.branch}`;
+      const res = await fetch(url, {
+        headers: { 'Authorization': `token ${s.token}`, 'Accept': 'application/vnd.github.v3+json' }
+      });
+      if (!res.ok) throw new Error(`Read error: ${res.status}`);
+      const data = await res.json();
+      const content = atob(data.content.replace(/\n/g, ''));
+      return { json: JSON.parse(content), sha: data.sha };
+    }
+
+    async function writeLicenseFile(s, jsonObj, sha, msg) {
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(jsonObj, null, 2))));
+      const url = `https://api.github.com/repos/${s.owner}/${s.repo}/contents/${s.filepath}`;
+      const body = { message: msg, content: content, branch: s.branch };
+      if (sha) body.sha = sha;
+      const res = await fetch(url, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${s.token}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+      });
+      if (!res.ok) { const e = await res.json(); throw new Error(e.message || 'Write failed'); }
+      return await res.json();
+    }
+
+    // === LOAD & RENDER ===
+    async function loadLicenses() {
+      const s = getSettings();
+      if (!s) { showStatus('❌ Pehle Settings save karein!', false); return; }
+      try {
+        showStatus('⏳ <span class="spinner"></span>Loading...', true);
+        const { json } = await readLicenseFile(s);
+        renderList(json);
+        updateStats(json);
+        showStatus('✅ Licenses loaded!', true);
+      } catch (e) { showStatus('❌ ' + e.message, false); }
+    }
+
+    function updateStats(json) {
+      const keys = Object.keys(json);
+      let active = 0, revoked = 0;
+      keys.forEach(k => { if (json[k].active === true) active++; else revoked++; });
+      document.getElementById('statTotal').textContent = keys.length;
+      document.getElementById('statActive').textContent = active;
+      document.getElementById('statRevoked').textContent = revoked;
+    }
+
+    function renderList(json) {
+      const c = document.getElementById('list');
+      const keys = Object.keys(json);
+      if (keys.length === 0) {
+        c.innerHTML = '<div class="empty-state"><span class="icon">📭</span><div class="text">Koi license nahi</div></div>';
+        return;
+      }
+      c.innerHTML = keys.map(key => {
+        const item = json[key];
+        const isActive = item.active === true;
+        const exp = item.expires ? new Date(item.expires).toLocaleString() : 'Never';
+        return `
+          <div class="lic-card ${isActive ? 'active-card' : 'revoked-card'}">
+            <div class="lic-key">🔑 ${key}</div>
+            <div class="lic-owner">👤 ${item.owner || 'N/A'}</div>
+            <div class="lic-note">📝 ${item.note || '-'}</div>
+            <div class="lic-expires">⏰ Expires: ${exp}</div>
+            <span class="lic-status ${isActive ? 'active' : 'revoked'}">${isActive ? '● ACTIVE' : '● REVOKED'}</span>
+            <div class="lic-actions">
+              <button class="btn-gray" onclick="toggleActive('${key}', ${!isActive})">${isActive ? '🚫 REVOKE' : '✅ ACTIVATE'}</button>
+              <button class="btn-red" onclick="deleteKey('${key}')">🗑️ DELETE</button>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    // === ACTIONS ===
+    async function addLicense() {
+      const s = getSettings();
+      if (!s) { showStatus('❌ Pehle Settings save karein!', false); return; }
+      const key = document.getElementById('newKey').value.trim();
+      const owner = document.getElementById('newOwner').value.trim();
+      const expiresRaw = document.getElementById('newExpires').value.trim();
+      const note = document.getElementById('newNote').value.trim();
+      if (!key || !owner) { showStatus('❌ Key aur Owner zaroori!', false); return; }
+      try {
+        showStatus('⏳ <span class="spinner"></span>Creating license...', true);
+        const { json, sha } = await readLicenseFile(s);
+        if (json[key]) { showStatus('❌ Yeh key pehle se mojood hai!', false); return; }
+        json[key] = { owner, active: true, expires: expiresRaw ? parseInt(expiresRaw) : null, note: note || '' };
+        await writeLicenseFile(s, json, sha, `Add license: ${key}`);
+        showStatus(`✅ License "${key}" created!`, true);
+        document.getElementById('newKey').value = '';
+        document.getElementById('newOwner').value = '';
+        document.getElementById('newExpires').value = '';
+        document.getElementById('newNote').value = '';
+        loadLicenses();
+      } catch (e) { showStatus('❌ ' + e.message, false); }
+    }
+
+    async function toggleActive(key, newActive) {
+      const s = getSettings();
+      if (!s) return;
+      try {
+        showStatus('⏳ <span class="spinner"></span>Updating...', true);
+        const { json, sha } = await readLicenseFile(s);
+        if (!json[key]) { showStatus('❌ Key nahi mili!', false); return; }
+        json[key].active = newActive;
+        await writeLicenseFile(s, json, sha, `${newActive ? 'Activate' : 'Revoke'}: ${key}`);
+        showStatus(`✅ "${key}" ${newActive ? 'activated' : 'revoked'}!`, true);
+        loadLicenses();
+      } catch (e) { showStatus('❌ ' + e.message, false); }
+    }
+
+    async function deleteKey(key) {
+      if (!confirm(`"${key}" ko permanently delete karein?`)) return;
+      const s = getSettings();
+      if (!s) return;
+      try {
+        showStatus('⏳ <span class="spinner"></span>Deleting...', true);
+        const { json, sha } = await readLicenseFile(s);
+        delete json[key];
+        await writeLicenseFile(s, json, sha, `Delete: ${key}`);
+        showStatus(`✅ "${key}" deleted!`, true);
+        loadLicenses();
+      } catch (e) { showStatus('❌ ' + e.message, false); }
+    }
+
+    function showStatus(msg, ok) {
+      const el = document.getElementById('status');
+      el.innerHTML = msg;
+      el.className = 'status show ' + (ok ? 'ok' : 'err');
+    }
+
+    loadSettingsToForm();
+  </script>
+</body>
+</html>
